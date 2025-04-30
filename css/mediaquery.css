@@ -249,7 +249,7 @@
         margin: 10px 25px !important;
         color: #545270;
         font-size: 17px;
-        font-family: "Playwrite RO", cursive;
+        font-family: "Playwrite RO", cursive !important;
         margin: 10px;
     }
     

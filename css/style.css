@@ -460,16 +460,12 @@ nav{
     height: 180px;
 }
 
-#name:focus{
-    border: 2px solid var(--order-btn) !important;
-}
-
-#email:focus{
+#name:focus,
+#email:focus,
+#text:focus {
     border: 2px solid var(--order-btn);
-}
+    border-radius: 0;
 
-#text:focus{
-    border: 2px solid var(--order-btn);
 }
 
 #subbutn{
