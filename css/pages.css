@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --nav-bg-color: rgb(14, 13, 41);
+    --order-btn: #e49a2c;
+}
+
+header{
+    width: 100%;
+}
+
+header .bg-img img{
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.bg-img{
+    background-image: url("/photos/pages-bg.jpg");
+    background-repeat:no-repeat ;
+    /* background-position: center; */
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.bg-img p{
+    font-size: 35px;
+    color: var(--order-btn);
+}
+

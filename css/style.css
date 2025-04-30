@@ -72,7 +72,7 @@ nav{
 .header {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(0deg, #00000098, #000000b2), url("/photos/header\ bg.webp");
+    background-image: linear-gradient(0deg, #1b1b3398, #1b1b3398), url("/photos/header\ bg.webp");
     background-position: center;
     background-size: 100%;
     align-content: center;
