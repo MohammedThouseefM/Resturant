@@ -9,7 +9,6 @@
     :root {
         --nav-bg-color: rgb(14, 13, 41);
         --order-btn: #e49a2c;
-        
     }
     
     nav{
@@ -224,8 +223,7 @@
     .about-text{
         margin: 5px;
         width:90%;
-        min-width: 400px;
-        min-height: 500px;
+        min-height: 400px;
         height: auto;
         border: 1px solid rgba(0, 0, 0, 0);
     }
@@ -240,7 +238,7 @@
     .about-text h3{
         margin: 10px;
         color: #2c2b3b;
-        font-size: 30px;
+        font-size: 1.7rem;
         justify-self: center;   
         font-family: "Playwrite RO", cursive;
     }
@@ -791,7 +789,7 @@
     .about-text h3{
         margin: 10px;
         color: #2c2b3b;
-        font-size: 30px;
+        font-size: 1.5em !important;
         justify-self: center;   
         font-family: "Playwrite RO", cursive;
     }
@@ -1291,7 +1289,6 @@ nav{
 .aboutphotos{
     margin: 5px;
     width: 45%;
-    min-width: 400px;
     height: 500px;
     display: flex;
     flex-wrap: wrap;
@@ -1338,7 +1335,7 @@ nav{
 .about-text h3{
     margin: 10px 0 10px 20px;
     color: #2c2b3b;
-    font-size: 30px;
+    font-size: 1.6em;
     font-family: "Playwrite RO", cursive;
 }
 
@@ -1836,7 +1833,7 @@ nav{
 .aboutphotos{
     margin: 5px;
     width: 45%;
-    min-width: 400px;
+    min-width: 400px !important;
     height: 500px;
     display: flex;
     flex-wrap: wrap;

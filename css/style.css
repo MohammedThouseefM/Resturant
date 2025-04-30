@@ -184,6 +184,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: center ;
+    margin-top: 50px;
 }
 
 .experiance{
@@ -244,7 +245,6 @@ nav{
 .about-text{
     margin: 5px;
     width: 45%;
-    min-width: 400px;
     height: 500px;
     border: 1px solid rgba(0, 0, 0, 0);
 }
@@ -258,7 +258,7 @@ nav{
 .about-text h3{
     margin: 10px 0 10px 20px;
     color: #2c2b3b;
-    font-size: 30px;
+    font-size: 1.4em !important;
     font-family: "Playwrite RO", cursive;
 }
 
