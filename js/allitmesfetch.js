@@ -74,7 +74,7 @@ const foodContainer = document.getElementById('card-cont');
 
 alldatas.forEach(card => {
     const foodCardHTML = `
-        <div class="foodcard">
+        <div class="foodcard" data-aos="fade-up" data-aos-delay="200">
             <div class="foodimg">
                 <img src="${card.src}" width="100%" height="100%" alt="loading...">
             </div>

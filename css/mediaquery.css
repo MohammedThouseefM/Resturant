@@ -740,8 +740,8 @@
     
     .aboutphotos{
         margin: 5px;
-        width: 70% !important;
-        height: 500px;
+        width: 50% !important;
+        height: 400px;
         display: flex;
         flex-wrap: wrap;
         border: 1px solid rgba(0, 0, 0, 0);
@@ -774,7 +774,7 @@
         margin: 5px;
         width:90%;
         min-width: 400px;
-        min-height: 500px;
+        min-height: 300px;
         height: auto;
         border: 1px solid rgba(0, 0, 0, 0);
     }
@@ -1289,7 +1289,7 @@ nav{
 .aboutphotos{
     margin: 5px;
     width: 45%;
-    height: 500px;
+    height: 400px;
     display: flex;
     flex-wrap: wrap;
     border: 1px solid rgba(0, 0, 0, 0);
@@ -1832,7 +1832,8 @@ nav{
 
 .aboutphotos{
     margin: 5px;
-    height: 500px;
+    height: 400px;
+    width: 45%;
     display: flex;
     flex-wrap: wrap;
     border: 1px solid rgba(0, 0, 0, 0);

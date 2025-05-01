@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="/css/mediaquery.css">
     <link rel="stylesheet" href="/css/pages.css">
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/ad816efcc7.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
@@ -183,14 +186,14 @@
     </div>
 
     <header>
-        <div class="bg-img">
-            <p class="fontstyle1">
+        <div class="bg-img" >
+            <p class="fontstyle1" data-aos="fade-right">
                 ~~ About Us ~~
             </p>
         </div>
     </header>
 
-    <div class="aboutparent" id="about">
+    <div class="aboutparent" id="about" data-aos="zoom-in" data-aos-delay="200">
         <div class="about-text">
             <div class="headingabout">
                 <h2 class="fontstyle1 aboutustopic ">~~ About Us ~~</h2>
@@ -210,16 +213,16 @@
             <button class="bttn btn-hover mx-4">Order Now</button>
         </div>
         <div class="aboutphotos">
-            <div class="parant-img">
+            <div class="parant-img" data-aos="fade-up" data-aos-delay="200">
                 <img id="img1" src="/photos/aboutimg1.avif" width="100%" height="100%" alt="">
             </div>
-            <div class="parant-img">
+            <div class="parant-img" data-aos="fade-up" data-aos-delay="200">
                 <img id="img2" src="/photos/aboutfood1.jpg" width="100%" height="100%" alt="">
             </div>
-            <div class="parant-img">
+            <div class="parant-img" data-aos="fade-up" data-aos-delay="200">
                 <img id="img3" src="/photos/aboutfood2.avif" width="100%" height="100%" alt="">
             </div>
-            <div class="parant-img">
+            <div class="parant-img" data-aos="fade-up" data-aos-delay="200">
                 <img id="img4" src="/photos/aboutimg2.jpg" width="100%" height="100%" alt="">
             </div>
         </div>
@@ -254,7 +257,7 @@
     </div>
 
     <footer>
-        <div class="containers">
+        <div class="containers" data-aos="flip-left">
             <h2 class="detailsnames fontstyle1">
                 ~~ Company ~~
             </h2>
@@ -278,7 +281,7 @@
                 </ul>
             </div>
         </div>
-        <div class="containers">
+        <div class="containers" data-aos="flip-left">
             <h2 class="detailsnames fontstyle1">
                 ~~ Contact ~~
             </h2>
@@ -312,7 +315,7 @@
                 </div>
             </div>
         </div>
-        <div class="containers">
+        <div class="containers" data-aos="flip-left">
             <h2 class="detailsnames fontstyle1">
                 ~~ Opening ~~
             </h2>
@@ -335,7 +338,7 @@
                 </li>
             </div>
         </div>
-        <div class="containers">
+        <div class="containers" data-aos="flip-left">
             <h2 class="detailsnames fontstyle1">
                 ~~ News Letter~~
             </h2>
@@ -364,6 +367,16 @@
 
     <!-- navbar-js -->
     <script src="/js/navbar.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
 
 </body>
 
