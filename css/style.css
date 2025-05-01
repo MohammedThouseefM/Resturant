@@ -289,6 +289,29 @@ nav{
     font-family: "Playwrite RO", cursive;
 }
 
+.btns-div{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-self: center;
+    border-bottom: 1px solid var(--nav-bg-color);
+}
+
+.btns-div button{
+    min-width: 70px;
+    width: auto;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+}
+
+.btns-div button:focus{
+    border-top:4px solid var(--order-btn) ;
+}
+
+
+
 .foods{
     display: flex;
     flex-wrap: wrap;

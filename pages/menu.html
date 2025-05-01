@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Restaurant</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/mediaquery.css">
     <link rel="stylesheet" href="/css/pages.css">
     <script src="https://kit.fontawesome.com/ad816efcc7.js" crossorigin="anonymous"></script>
@@ -195,137 +195,14 @@
             <h2 class="fontstyle1">~~ Food Menu ~~</h2>
             <h1>Most popular Items</h1>
         </div>
-        <div class="foods">
-            <div class="foodcard">
-                <div class="foodimg">
-                    <img src="/photos/food1.webp" width="100%" height="100%" alt="loading...">
-                </div>
-                <div class="fooddetail">
-                    <p class="foodname">Beef Burger</p>
-                    <hr>
-                    <p class="fooddsp">Lorem ipsum dolor sit amet consectetur .</p>
-                </div>
-                <div class="praice">
-                    <p class="praiceval">130rs</p>
-                </div>
-            </div>
-            <div class="foodcard">
-                <div class="foodimg">
-                    <img src="/photos/food2.jpeg" width="100%" height="100%" alt="loading...">
-                </div>
-                <div class="fooddetail">
-                    <p class="foodname">Butter Chicken</p>
-                    <hr>
-                    <p class="fooddsp">Lorem ipsum dolor sit amet consectetur .</p>
-                </div>
-                <div class="praice">
-                    <p class="praiceval">230rs</p>
-                </div>
-            </div>
-            <div class="foodcard">
-                <div class="foodimg">
-                    <img src="/photos/food3.webp" width="100%" height="100%" alt="loading...">
-                </div>
-                <div class="fooddetail">
-                    <p class="foodname">Margherita Pizza</p>
-                    <hr>
-                    <p class="fooddsp">Lorem ipsum dolor sit amet consectetur .</p>
-                </div>
-                <div class="praice">
-                    <p class="praiceval">170rs</p>
-                </div>
-            </div>
-            <div class="foodcard">
-                <div class="foodimg">
-                    <img src="/photos/food4.png" width="100%" height="100%" alt="loading...">
-                </div>
-                <div class="fooddetail">
-                    <p class="foodname">Paneer Tikka</p>
-                    <hr>
-                    <p class="fooddsp">Lorem ipsum dolor sit amet consectetur .</p>
-                </div>
-                <div class="praice">
-                    <p class="praiceval">120rs</p>
-                </div>
-            </div>
-            <div class="foodcard">
-                <div class="foodimg">
-                    <img src="/photos/food5.jpg" width="100%" height="100%" alt="loading...">
-                </div>
-                <div class="fooddetail">
-                    <p class="foodname">Sushi Roll</p>
-                    <hr>
-                    <p class="fooddsp">Lorem ipsum dolor sit amet consectetur .</p>
-                </div>
-                <div class="praice">
-                    <p class="praiceval">190rs</p>
-                </div>
-            </div>
-            <div class="foodcard">
-                <div class="foodimg">
-                    <img src="/photos/food6.jpeg" width="100%" height="100%" alt="loading...">
-                </div>
-                <div class="fooddetail">
-                    <p class="foodname">Chicken Biryani</p>
-                    <hr>
-                    <p class="fooddsp">Lorem ipsum dolor sit amet consectetur .</p>
-                </div>
-                <div class="praice">
-                    <p class="praiceval">150rs</p>
-                </div>
-            </div>
-            <div class="foodcard">
-                <div class="foodimg">
-                    <img src="/photos/food7.webp" width="100%" height="100%" alt="loading...">
-                </div>
-                <div class="fooddetail">
-                    <p class="foodname">Pasta Alfredo</p>
-                    <hr>
-                    <p class="fooddsp">Lorem ipsum dolor sit amet consectetur .</p>
-                </div>
-                <div class="praice">
-                    <p class="praiceval">140rs</p>
-                </div>
-            </div>
-            <div class="foodcard">
-                <div class="foodimg">
-                    <img src="/photos/food8.jpg" width="100%" height="100%" alt="loading...">
-                </div>
-                <div class="fooddetail">
-                    <p class="foodname">Falafel Wrap </p>
-                    <hr>
-                    <p class="fooddsp">Lorem ipsum dolor sit amet consectetur .</p>
-                </div>
-                <div class="praice">
-                    <p class="praiceval">125rs</p>
-                </div>
-            </div>
-            <div class="foodcard">
-                <div class="foodimg">
-                    <img src="/photos/food9.jpeg" width="100%" height="100%" alt="loading...">
-                </div>
-                <div class="fooddetail">
-                    <p class="foodname">Tandoori Roti with Dal Makhani </p>
-                    <hr>
-                    <p class="fooddsp">Lorem ipsum dolor sit amet consectetur .</p>
-                </div>
-                <div class="praice">
-                    <p class="praiceval">330rs</p>
-                </div>
-            </div>
-            <div class="foodcard">
-                <div class="foodimg">
-                    <img src="/photos/food10.jpeg" width="100%" height="100%" alt="loading...">
-                </div>
-                <div class="fooddetail">
-                    <p class="foodname">spaghetti</p>
-                    <hr>
-                    <p class="fooddsp">Lorem ipsum dolor sit amet consectetur .</p>
-                </div>
-                <div class="praice">
-                    <p class="praiceval">90rs</p>
-                </div>
-            </div>
+        <div class="btns-div">
+            <!-- <div class="btn-card"><button id="allitems-btn">All</button></div> -->
+            <div class="btn-card"><button id="drinks-btn"><i class="fa-solid fa-martini-glass"></i> Drinks</button></div>
+            <div class="btn-card"><button id="pizza-btn"><i class="fa-solid fa-utensils"></i> Foods</button></div>
+            <div class="btn-card"><button id="snacks-btn"><i class="fa-solid fa-cookie-bite"></i> Snacks</button></div>
+        </div>
+        <div class="foods" id="card-cont">
+            
         </div>
     </div>
 
@@ -440,6 +317,12 @@
 
     <!-- navbar-js -->
     <script src="/js/navbar.js"></script>
+
+    <!-- fecthing -->
+    <script src="/js/allitmesfetch.js"></script>
+
+    <!-- all itmes fetching -->
+     <script src="/js/allitmesfetch.js"></script>
 </body>
 
 </html>
