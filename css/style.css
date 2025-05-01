@@ -212,7 +212,6 @@ nav{
 .aboutphotos{
     margin: 5px;
     width: 45%;
-    min-width: 400px;
     height: 500px;
     display: flex;
     flex-wrap: wrap;
@@ -338,6 +337,25 @@ nav{
 .foodcard .praice{
     width: 15%;
     text-align: center;
+}
+
+.foodoffer{
+    width: 100%;
+    min-height: 400px;
+    height: auto;
+    text-align: center;
+    align-content: center;
+    background-image: url("/photos/pizza\ bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.foodoffer-con-div h1,
+.foodoffer-con-div p{
+    color: white;
+    width: 80%;
+    justify-self: center;
 }
 
 .praiceval{
