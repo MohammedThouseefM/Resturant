@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="/css/mediaquery.css">
     <!-- AOS CSS -->
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ad816efcc7.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
@@ -55,47 +55,46 @@
               <button class="btn btn-outline-success" type="submit">Search</button> -->
                 </form>
                 <div class="mx-2">
-                    <button class="btn btn btn-hover" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
-                    <button class="btn btn btn-hover " id="orderbtn" data-bs-toggle="modal"
-                        data-bs-target="#signupModal">Order
-                        Now
+                    <button class="btn btn btn-hover cartbtnsss" data-bs-toggle="modal" data-bs-target="#loginModal"><i
+                            class="fa-solid fa-cart-shopping"></i>
+                        <p><span id="cart-count">0</span></p>
                     </button>
+                    <button class="btn btn btn-hover " id="orderbtn" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">Book Table</button>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- login Modal -->
+    <!-- cart Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
+
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="loginModalLabel">Log In</h1>
+                    <h1 class="modal-title fs-5" id="loginModalLabel">My Cart</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+
                 <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    <div class="cardtocart-con">
+                        <div class="slidbar">
+                            <div id="cartitems">
+
+                            </div>
+                            <hr>
+                            <div class="foot">
+                                <h3>Total :</h3>
+                                <h2 id="total">0.00rs</h2>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
+                    </div>
                 </div>
+
                 <div class="modal-footer">
-                    <button type="button" id="orderbth2" class="btn btn-secondary "
-                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" id="orderbtn" class="btn btn-hover" data-bs-dismiss="modal">Close</button>
                 </div>
+
             </div>
         </div>
     </div>
@@ -187,7 +186,8 @@
         <div class="parahs">
             <h1 class="heading fontstyle1">Fast Foods Restaurant</h1>
             <p>From the heart of the streets to the soul of your plate—bold flavors, real moments.</p>
-            <button class="bttn btn-hover">Order Now</button>
+            <button class="btn btn btn-hover " id="orderbtn" data-bs-toggle="modal" data-bs-target="#signupModal">Book
+                Table</button>
         </div>
         <div class="plateimg">
             <img src="/photos/plateimg.png" alt="">
@@ -215,16 +215,16 @@
         </div>
         <div class="aboutphotos" data-aos="fade-up">
             <div class="parant-img">
-                <img id="img1" src="/photos/aboutimg1.avif" data-aos="zoom-in" data-aos-delay="200" width="100%" height="100%" alt="">
+                <img id="img1" src="/photos/aboutimg1.avif" data-aos="zoom-in" width="100%" height="100%" alt="">
             </div>
             <div class="parant-img">
-                <img id="img2" src="/photos/aboutfood1.jpg" data-aos="zoom-in" data-aos-delay="200" width="100%" height="100%" alt="">
+                <img id="img2" src="/photos/aboutfood1.jpg" data-aos="zoom-in" width="100%" height="100%" alt="">
             </div>
             <div class="parant-img">
-                <img id="img3" src="/photos/aboutfood2.avif" data-aos="zoom-in" data-aos-delay="200" width="100%" height="100%" alt="">
+                <img id="img3" src="/photos/aboutfood2.avif" data-aos="zoom-in" width="100%" height="100%" alt="">
             </div>
             <div class="parant-img">
-                <img id="img4" src="/photos/aboutimg2.jpg" data-aos="zoom-in" data-aos-delay="200" width="100%" height="100%" alt="">
+                <img id="img4" src="/photos/aboutimg2.jpg" data-aos="zoom-in" width="100%" height="100%" alt="">
             </div>
         </div>
 
@@ -258,18 +258,12 @@
     </div>
 
     <div class="food-menu" id="food-menu">
-        <div class="foodmenuheading" data-aos="zoom-in" data-aos-delay="200">
+        <div class="foodmenuheading" data-aos="zoom-in">
             <h2 class="fontstyle1">~~ Food Menu ~~</h2>
             <h1>Most popular Items</h1>
         </div>
-        <div class="btns-div" data-aos="zoom-in" data-aos-delay="200">
-            <!-- <div class="btn-card"><button id="allitems-btn">All</button></div> -->
-            <div class="btn-card"><button id="drinks-btn"><i class="fa-solid fa-martini-glass"></i> Drinks</button></div>
-            <div class="btn-card"><button id="pizza-btn"><i class="fa-solid fa-utensils"></i> Foods</button></div>
-            <div class="btn-card"><button id="snacks-btn"><i class="fa-solid fa-cookie-bite"></i> Snacks</button></div>
-        </div>
         <div class="foods" id="card-cont" data-aos="fade-up">
-            
+
         </div>
     </div>
 
@@ -278,30 +272,30 @@
             <h1 class="fontstyle1">Chicken Pizza</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, nemo.</p>
         </div>
-        <div class="offerorderbtn" >
+        <div class="offerorderbtn" data-aos="fade-right">
             <button class="bttn btn-hover">Order Now</button>
         </div>
     </div>
 
     <div class="gallery" id="gallery">
-        <div class="galleryheading" data-aos="zoom-in" data-aos-delay="200">
+        <div class="galleryheading" data-aos="zoom-in">
             <h2 class="fontstyle1">~~ Gallery ~~</h2>
             <h1>See Our Photos</h1>
         </div>
-        <div class="galleryphotos" >
+        <div class="galleryphotos">
             <div class="portfolio-container">
-                <div class="col-md-7 col-lg-3 web new "data-aos="fade-up">
+                <div class="col-md-7 col-lg-3 web new " data-aos="fade-up">
                     <div class="portfolio-item">
                         <img src="/photos/gallery1.jpg" class="img-fluid" alt="Loading">
                     </div>
                 </div>
 
-                <div class="col-md-7 col-lg-3 advertising new"data-aos="fade-up">
+                <div class="col-md-7 col-lg-3 advertising new" data-aos="fade-up">
                     <div class="portfolio-item">
                         <img src="/photos/gallery2.jpeg" class="img-fluid" alt="Loading">
                     </div>
                 </div>
-                <div class="col-md-7 col-lg-3 advertising new"data-aos="fade-up">
+                <div class="col-md-7 col-lg-3 advertising new" data-aos="fade-up">
                     <div class="portfolio-item">
                         <img src="/photos/gallery3.avif" class="img-fluid" alt="Loading">
                     </div>
@@ -313,35 +307,35 @@
                     </div>
                 </div> -->
 
-                <div class="col-md-7 col-lg-3 advertising new"data-aos="fade-up">
+                <div class="col-md-7 col-lg-3 advertising new" data-aos="fade-up">
                     <div class="portfolio-item">
                         <img src="/photos/gallery5.jpg" class="img-fluid" alt="Loading">
                     </div>
                 </div>
 
-                <div class="col-md-7 col-lg-3 advertising new"data-aos="fade-up">
+                <div class="col-md-7 col-lg-3 advertising new" data-aos="fade-up">
                     <div class="portfolio-item">
                         <img src="/photos/gallery6.jpg" class="img-fluid" alt="Loading">
                     </div>
                 </div>
 
-                <div class="col-md-7 col-lg-3 advertising new"data-aos="fade-up">
+                <div class="col-md-7 col-lg-3 advertising new" data-aos="fade-up">
                     <div class="portfolio-item">
                         <img src="/photos/gallery7.jpg" class="img-fluid" alt="Loading">
                     </div>
                 </div>
 
-                <div class="col-md-7 col-lg-3 branding new"data-aos="fade-up">
+                <div class="col-md-7 col-lg-3 branding new" data-aos="fade-up">
                     <div class="portfolio-item">
                         <img src="/photos/gallery8.jpg" class="img-fluid" alt="Loading">
                     </div>
                 </div>
-                <div class="col-md-7 col-lg-3 branding new"data-aos="fade-up">
+                <div class="col-md-7 col-lg-3 branding new" data-aos="fade-up">
                     <div class="portfolio-item">
                         <img src="/photos/gallery9.jpg" class="img-fluid" alt="Loading">
                     </div>
                 </div>
-                <div class="col-md-7 col-lg-3 branding new"data-aos="fade-up">
+                <div class="col-md-7 col-lg-3 branding new" data-aos="fade-up">
                     <div class="portfolio-item">
                         <img src="/photos/gallery10.jpg" class="img-fluid" alt="Loading">
                     </div>
@@ -351,7 +345,7 @@
     </div>
 
     <div class="contactus " id="contactus">
-        <div class="contactusheading" data-aos="zoom-in" data-aos-delay="200">
+        <div class="contactusheading" data-aos="zoom-in">
             <h2 class="fontstyle1">~~ Contact Us ~~</h2>
             <h1>Contact For Any Query</h1>
         </div>
@@ -482,7 +476,7 @@
         </div>
         <hr class="policyhr">
         <p id="allright">
-            All Rights Reservd. Desingned By TechByThouseef.in
+            All Rights Reservd. Desingned By <a href="https://techbythouseef.in" target="_blank">TechByThouseef.in</a>
         </p>
     </footer>
 
@@ -494,20 +488,17 @@
     <!-- navbar-js -->
     <script src="/js/navbar.js"></script>
 
-    <!-- fecthing -->
-     <script src="/js/fetching.js"></script>
+    <!-- all itmes fetching -->
+    <script src="/js/allitmesfetch.js"></script>
 
-     <!-- all itmes fetching -->
-      <script src="/js/allitmesfetch.js"></script>
-
-      <!-- AOS JS -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000,
-    once: true
-  });
-</script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 
 </body>
 
